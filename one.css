@@ -1,0 +1,16 @@
+h1{
+  color: red;
+  text-transform: uppercase;
+  font-family: Arial;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+#firstSection{
+  text-align: center;
+}
+
+#tryAgain{
+  /* display: none; */
+  visibility: hidden;
+}
