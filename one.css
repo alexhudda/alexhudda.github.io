@@ -16,8 +16,7 @@ h1{
 
 #credits{
   text-align:center;
-  position: fixed;
-  width: 100%; 
+  position: absolute;
+  width: 100%;
   bottom: 10px;
 }
-
