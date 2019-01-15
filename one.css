@@ -11,6 +11,13 @@ h1{
 }
 
 #tryAgain{
-  /* display: none; */
   visibility: hidden;
 }
+
+#credits{
+  text-align:center;
+  position: fixed;
+  width: 100%; 
+  bottom: 10px;
+}
+
