@@ -1,0 +1,60 @@
+h1{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: red;
+}
+
+#shape{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  display: none;
+  position: relative;
+}
+
+#testShape{
+  height: 680px;
+  width: 1600px;
+  margin: 0 auto;
+  /* background-color: purple; */
+  /* width: 80%; */
+  /* width: 1400px; */
+  /* background-color: purple; */
+  /* height: 72vh;/* vh stands for view-port height. 1vh is equals to 1% of the screen height*/ */
+  /* height: 200px; */
+}
+
+#sample{
+  width: 100px;
+  height: 650px;
+  position: relative;
+  top: 0px;
+  left: 1500px;
+  background-color: red;
+}
+
+/* StartAgain button */
+#startAgainDiv{
+  /* text-align: center; */
+  display: none;
+}
+
+#displayButton{
+  visibility: hidden;
+}
+
+#timeTaken{
+  text-align: center;
+}
+
+#shape2{
+  display: none;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
+
+body{
+  font-family: Arial;
+  text-align: center;
+}
