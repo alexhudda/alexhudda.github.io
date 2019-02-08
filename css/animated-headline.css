@@ -64,18 +64,18 @@ a {
 }
 
 .cd-headline {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
