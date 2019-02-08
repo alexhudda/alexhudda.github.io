@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <style type="text/css">
+
+  #sample{
+    margin-top: 50px;
+  }
+
+  .rounded {
+    border-radius: .4rem!important
+  }
+
+  .card{
+    margin-top: 2px;
+  }
+
+  .inner{
+    overflow: hidden;
+  }
+
+  .inner img{
+    transition: all 1s ease;
+  }
+
+  .inner:hover img{
+    transform: scale(1.5)
+  }
+
+  #htmlmore, #cssmore, #jsmore, #jquerymore, #mysqlmore, #phpmore, #java1more, #java2more{
+    display: none;
+  }
+
+  /* .switchit a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+  } */
+
+  .sample a:link{
+    text-decoration: none;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="sample">
+    <div class="card rounded shadow mb-4" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="m-0 card-title">Portfolio</h5>
+        <hr>
+        <p class="card-text">Presenting myself in a Unique Way!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="html_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">HTML</h5>
+            <hr>
+            <!-- <p class="card-text">About HTML</p> -->
+            <ul>
+              <li>Images</li>
+              <li>Forms</li>
+              <li>Tables</li>
+              <li>Links</li>
+              <li>Entities</li>
+              <span id="htmlmore">
+                <li>IFrames</li>
+                <li>Header Tags</li>
+                <li>Paragraph Tags</li>
+                <li>Formatting Text</li>
+                <li>Lists</li>
+                <li>Lists</li>
+                <li>Lists</li>
+              </span>
+            </ul>
+            <div class="sample">
+              <a href="#collapseIt" class="switchit" id='html'>More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="css_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">CSS</h5>
+            <hr>
+            <!-- <p class="card-text">About CSS</p> -->
+            <ul>
+                <li>Classes</li>
+                <li>ID's</li>
+                <li>Border</li>
+                <li>Positioning</li>
+                <li>Pseudo-elements</li>
+                <span id="cssmore">
+                <li>Pseudo-classes</li>
+                <li>Styling Text</li>
+                <li>Fonts</li>
+                <li>Colors</li>
+                <li>Backgrounds</li>
+                <li>Margins</li>
+                <li>Paddings</li>
+              </span>
+            </ul>
+            <div class="sample">
+              <a href="#collapseIt" class="switchit" id="css">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="js_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Javascript</h5>
+            <hr>
+            <!-- <p class="card-text">About JAVASCRIPT</p> -->
+            <ul>
+              <li>DOM Elements, HTML, CSS</li>
+              <li>Functions</li>
+              <li>Arrays</li>
+              <li>Strings</li>
+              <li>Regular Expressions</li>
+              <span id="jsmore">
+                <li>Conditions</li>
+                <li>Loops</li>
+                <li>Data Types</li>
+                <li>Statements</li>
+                <li>Operators</li>
+                <li>Math</li>
+                <li>Random</li>
+              </span>
+            </ul>
+            <div class="sample">
+              <a href="#collapseIt" class="switchit" id="javascript">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="jquery_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">jQuery</h5>
+            <hr>
+            <!-- <p class="card-text">About jQuery</p> -->
+            <ul>
+              <li>Selectors</li>
+              <li>Events</li>
+              <li>Fade</li>
+              <li>Animate</li>
+              <li>jQuery UI</li>
+              <span id="jquerymore">
+                <li>Accordian</li>
+                <li>Draggable</li>
+                <li>Resizable</li>
+                <li>Droppable</li>
+                <li>Callback</li>
+                <li>Getter/Setter</li>
+                <li>CSS Classes</li>
+              </span>
+            </ul>
+            <div class="sample">
+              <a href="#collapseIt" class="switchit" id="jquery">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="mysql_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">MySQL</h5>
+            <hr>
+            <!-- <p class="card-text">About MYSQL</p> -->
+            <ul>
+              <li>Primary Key</li>
+              <li>Foriegn Key</li>
+              <li>Join</li>
+              <li>WildCards</li>
+              <li>Functions</li>
+              <span id="mysqlmore">
+                <li>Create</li>
+                <li>Delete</li>
+                <li>Update</li>
+                <li>Retrieve</li>
+                <li>Order By</li>
+                <li>Aliases</li>
+                <li>Group By</li>
+              </span>
+            </ul>
+            <div class="sample">
+            <a href="#collapseIt" class="switchit" id="mysql">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="php_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">PHP</h5>
+            <hr>
+            <!-- <p class="card-text">About PHP</p> -->
+            <ul>
+              <li>Sessions</li>
+              <li>Cookies</li>
+              <li>Functions</li>
+              <li>Strings</li>
+              <li>MySql Database</li>
+              <span id="phpmore">
+                <li>Conditional Statements</li>
+                <li>Arrays</li>
+                <li>Loops</li>
+                <li>Include</li>
+                <li>Variables</li>
+                <li>Constants</li>
+                <li>Data Types</li>
+              </span>
+            </ul>
+            <div class="sample">
+            <a href="#collapseIt" class="switchit" id="php">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card rounded shadow mb-4">
+          <div class="inner">
+            <img class="card-img-top" src="javal1_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Java L1</h5>
+            <hr>
+            <!-- <p class="card-text">About JAVA LEVEL1</p> -->
+            <ul>
+              <li>Classes/Objects</li>
+              <li>Constructors</li>
+              <li>Encapsulation</li>
+              <li>Polymorphism</li>
+              <li>Inheritance</li>
+              <span id="java1more">
+                <li>Packages</li>
+                <li>DataTypes</li>
+                <li>Loops</li>
+                <li>Strings</li>
+                <li>Arrays</li>
+                <li>Interfaces</li>
+                <li>Modifiers</li>
+              </span>
+            </ul>
+            <div class="sample">
+            <a href="#collapseIt" class="switchit" id="java1">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card rounded shadow <mb-4></mb-4>">
+          <div class="inner">
+            <img class="card-img-top" src="javal2_certificate.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Java L2</h5>
+            <hr>
+            <!-- <p class="card-text">About JAVA LEVEL2</p> -->
+            <ul>
+              <li>Networking</li>
+              <li>Timers</li>
+              <li>Exception Handling</li>
+              <li>ListViews</li>
+              <li>Processing JSON Data</li>
+              <span id="java2more">
+                <li>Inner Classes</li>
+                <li>Generics</li>
+                <li>Wrapper Classes</li>
+                <li>Collection</li>
+                <li>JDBC</li>
+                <li>Servlet</li>
+                <li>JSP</li>
+              </span>
+            </ul>
+            <div class="sample">
+            <a href="#collapseIt" class="switchit" id="java2">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+    $( ".card" ).hover(
+      function() {
+        $(this).animate({marginTop: "-3px"}, 200);
+        $(this).addClass('shadow-lg').css('cursor', 'pointer');
+      }, function() {
+        $(this).animate({marginTop: "3px"}, 200);
+        $(this).removeClass('shadow-lg');
+      });
+
+      // $(".switchit").click(function(){
+      //     console.log($(this).attr("id"));
+      //   if($(this).attr("id")=="html")
+      //   $("#htmlitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="css")
+      //   $("#cssitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="javascript")
+      //   $("#javascriptitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="jquery")
+      //   $("#jqueryitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="mysql")
+      //   $("#mysqlitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="php")
+      //   $("#phpitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="java1")
+      //   $("#java1items").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="java2")
+      //   $("#java2items").collapse('toggle');
+      //
+      //   if($(this).html()=='More')
+      //   $(this).html('Less');
+      //   else
+      //   $(this).html('More');
+      // });
+
+      $(".switchit").click(function(){
+        var getId=$(this).attr("id");
+        // console.log(getId);
+        myFunction(getId);
+      })
+
+      function myFunction(gotId) {
+        console.log(gotId);
+        if(gotId=="html"){
+          if ($("#htmlmore").css("display")=="inline") {
+            $("#htmlmore").css("display", "none");
+            $("#html").html("More");
+          }
+          else {
+            $("#htmlmore").css("display", "inline");
+            $("#html").html("Less");
+          }
+        }
+        else if(gotId=="css"){
+          console.log("into css");
+          if ($("#cssmore").css("display")=="inline") {
+            $("#cssmore").css("display", "none");
+            $("#css").html("More");
+          }
+          else {
+            $("#cssmore").css("display", "inline");
+            $("#css").html("Less");
+          }
+        }
+        else if(gotId=="javascript"){
+          console.log("into js");
+          if ($("#jsmore").css("display")=="inline") {
+            $("#jsmore").css("display", "none");
+            $("#javascript").html("More");
+          }
+          else {
+            $("#jsmore").css("display", "inline");
+            $("#javascript").html("Less");
+          }
+        }
+        else if(gotId=="jquery"){
+          if ($("#jquerymore").css("display")=="inline") {
+            $("#jquerymore").css("display", "none");
+            $("#jquery").html("More");
+          }
+          else {
+            $("#jquerymore").css("display", "inline");
+            $("#jquery").html("Less");
+          }
+        }
+        else if(gotId=="mysql"){
+          if ($("#mysqlmore").css("display")=="inline") {
+            $("#mysqlmore").css("display", "none");
+            $("#mysql").html("More");
+          }
+          else {
+            $("#mysqlmore").css("display", "inline");
+            $("#mysql").html("Less");
+          }
+        }
+        else if(gotId=="php"){
+          if ($("#phpmore").css("display")=="inline") {
+            $("#phpmore").css("display", "none");
+            $("#php").html("More");
+          }
+          else {
+            $("#phpmore").css("display", "inline");
+            $("#php").html("Less");
+          }
+        }
+        else if(gotId=="java1"){
+          if ($("#java1more").css("display")=="inline") {
+            $("#java1more").css("display", "none");
+            $("#java1").html("More");
+          }
+          else {
+            $("#java1more").css("display", "inline");
+            $("#java1").html("Less");
+          }
+        }
+        else if(gotId=="java2"){
+          if ($("#java2more").css("display")=="inline") {
+            $("#java2more").css("display", "none");
+            $("#java2").html("More");
+          }
+          else {
+            $("#java2more").css("display", "inline");
+            $("#java2").html("Less");
+          }
+        }
+
+        // if($('#dots').css("display")=="inline"){
+        //   $('#dots').css('display','none');
+        //   $('#more').css('display','inline');
+        //   $(this).html("Read Less");
+        // }
+        // else{
+        //   $('#dots').css('display','inline');
+        //   $('#more').css('display','none');
+        //   $(this).html("Read More");
+        // }
+
+
+        // var dots = document.getElementById("dots");
+        // var moreText = document.getElementById("more");
+        // var btnText = document.getElementById("html");
+        //
+        // if (dots.style.display === "none") {
+        //   dots.style.display = "inline";
+        //   moreText.style.display = "none";
+        //   btnText.innerHTML = "Read more";
+        // } else {
+        //   dots.style.display = "none";
+        //   moreText.style.display = "inline";
+        //   btnText.innerHTML = "Read less";
+        // }
+    }
+      // $(".c1").on('shown.bs.collapse', function(){
+      // });
+    });
+    </script>
+  </body>
+  </html>
