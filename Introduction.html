@@ -39,14 +39,6 @@
     color: orange;
   }
 
-   /* #h123 + #headingGone{
-    color: blue;
-  } */
-
-   /* #headingGone #h123{
-    color: blue;
-  } */
-
    #headingGone + #h123{
     color: blue;
   }
@@ -435,38 +427,6 @@
         $(this).removeClass('shadow-lg');
       });
 
-      // $(".switchit").click(function(){
-      //     console.log($(this).attr("id"));
-      //   if($(this).attr("id")=="html")
-      //   $("#htmlitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="css")
-      //   $("#cssitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="javascript")
-      //   $("#javascriptitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="jquery")
-      //   $("#jqueryitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="mysql")
-      //   $("#mysqlitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="php")
-      //   $("#phpitems").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="java1")
-      //   $("#java1items").collapse('toggle');
-      //
-      //   else if($(this).attr("id")=="java2")
-      //   $("#java2items").collapse('toggle');
-      //
-      //   if($(this).html()=='More')
-      //   $(this).html('Less');
-      //   else
-      //   $(this).html('More');
-      // });
-
       $(".switchit").click(function(){
         var getId=$(this).attr("id");
         // console.log(getId);
@@ -556,17 +516,8 @@
             $("#java2more").css("display", "inline");
             $("#java2").html("Less");
           }
-        }
-
-        lightbox.option({
-          'resizeDuration': 200,
-          'wrapAround': true
-        })
-
-        
+        }        
       }
-      // $(".c1").on('shown.bs.collapse', function(){
-      // });
     });
     </script>
   </body>
