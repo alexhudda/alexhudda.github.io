@@ -4,10 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Akshaya Amar Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+  <link rel="stylesheet" href="css/animated-headline.css"></link>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <!-- <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
+
+  .self {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .self1{
+    border-left: 5px solid orange;
+    padding-left: 40px;
+    margin-left: 40px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .self {
+      font-size: 3.4rem;
+      font-weight: 300;
+    }
+  }
+  @media only screen and (min-width: 1170px) {
+    .self {
+      font-size: 5rem;
+    }
+  }
+
+  b{
+    color: orange;
+  }
+
+   /* #h123 + #headingGone{
+    color: blue;
+  } */
+
+   /* #headingGone #h123{
+    color: blue;
+  } */
+
+   #headingGone + #h123{
+    color: blue;
+  }
 
   #sample{
     margin-top: 50px;
@@ -36,11 +78,6 @@
   #htmlmore, #cssmore, #jsmore, #jquerymore, #mysqlmore, #phpmore, #java1more, #java2more{
     display: none;
   }
-
-  /* .switchit a:link {
-    color: #FFFFFF;
-    text-decoration: none;
-  } */
 
   .sample a:link{
     text-decoration: none;
@@ -76,8 +113,24 @@
     </div>
   </nav>
 
+  <div class="headline-area">
+    <div class="container  col-md-12 self1">
+      <h1 class="self">Hi! I am Akshaya Amar</h1>
+      <div class="animate-headline">
+        <h1 class="cd-headline clip is-full-width">A
+          <span class="cd-words-wrapper">
+            <b class="is-visible">Web Developer</b>
+            <b>Programmer</b>
+            <b>Mobile App Developer</b>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
   <div class="container" id="sample">
-    <div class="card rounded shadow mb-4" style="width: 18rem;">
+    <!-- <div class="card rounded shadow mb-4" style="width: 18rem;"> -->
+    <div class="card rounded shadow mb-4">
       <div class="card-body">
         <h5 class="m-0 card-title">Portfolio</h5>
         <hr>
@@ -92,7 +145,9 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/html_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in HTML">
             <img class="card-img-top" src="certificates/html_certificate.png" alt="Card image cap">
+            </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">HTML</h5>
@@ -124,19 +179,21 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/html_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in HTML">
             <img class="card-img-top" src="certificates/css_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">CSS</h5>
             <hr>
             <!-- <p class="card-text">About CSS</p> -->
             <ul>
-                <li>Classes</li>
-                <li>ID's</li>
-                <li>Border</li>
-                <li>Positioning</li>
-                <li>Pseudo-elements</li>
-                <span id="cssmore">
+              <li>Classes</li>
+              <li>ID's</li>
+              <li>Border</li>
+              <li>Positioning</li>
+              <li>Pseudo-elements</li>
+              <span id="cssmore">
                 <li>Pseudo-classes</li>
                 <li>Styling Text</li>
                 <li>Fonts</li>
@@ -156,7 +213,9 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
-            <img class="card-img-top" src="certificates/js_certificate.png" alt="Card image cap">
+            <a href="certificates/js_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Javascript">
+              <img class="card-img-top" src="certificates/js_certificate.png" alt="Card image cap">
+            </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Javascript</h5>
@@ -188,7 +247,9 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/jquery_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in jQuery">
             <img class="card-img-top" src="certificates/jquery_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">jQuery</h5>
@@ -220,7 +281,9 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/mysql_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in MySQL">
             <img class="card-img-top" src="certificates/mysql_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">MySQL</h5>
@@ -243,7 +306,7 @@
               </span>
             </ul>
             <div class="sample">
-            <a href="#collapseIt" class="switchit" id="mysql">More</a>
+              <a href="#collapseIt" class="switchit" id="mysql">More</a>
             </div>
           </div>
         </div>
@@ -252,7 +315,9 @@
       <div class="col-md-4">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/php_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in PHP">
             <img class="card-img-top" src="certificates/php_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">PHP</h5>
@@ -275,7 +340,7 @@
               </span>
             </ul>
             <div class="sample">
-            <a href="#collapseIt" class="switchit" id="php">More</a>
+              <a href="#collapseIt" class="switchit" id="php">More</a>
             </div>
           </div>
         </div>
@@ -284,7 +349,9 @@
       <div class="col-md-6">
         <div class="card rounded shadow mb-4">
           <div class="inner">
+            <a href="certificates/javal1_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
             <img class="card-img-top" src="certificates/javal1_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Java L1</h5>
@@ -307,7 +374,7 @@
               </span>
             </ul>
             <div class="sample">
-            <a href="#collapseIt" class="switchit" id="java1">More</a>
+              <a href="#collapseIt" class="switchit" id="java1">More</a>
             </div>
           </div>
         </div>
@@ -316,7 +383,9 @@
       <div class="col-md-6">
         <div class="card rounded shadow <mb-4></mb-4>">
           <div class="inner">
+            <a href="certificates/javal2_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
             <img class="card-img-top" src="certificates/javal2_certificate.png" alt="Card image cap">
+          </a>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Java L2</h5>
@@ -339,7 +408,7 @@
               </span>
             </ul>
             <div class="sample">
-            <a href="#collapseIt" class="switchit" id="java2">More</a>
+              <a href="#collapseIt" class="switchit" id="java2">More</a>
             </div>
           </div>
         </div>
@@ -348,15 +417,15 @@
     </div>
   </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/animated-headline.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
   <script type="text/javascript">
 
   $(document).ready(function(){
+
     $( ".card" ).hover(
       function() {
         $(this).animate({marginTop: "-3px"}, 200);
@@ -365,6 +434,38 @@
         $(this).animate({marginTop: "3px"}, 200);
         $(this).removeClass('shadow-lg');
       });
+
+      // $(".switchit").click(function(){
+      //     console.log($(this).attr("id"));
+      //   if($(this).attr("id")=="html")
+      //   $("#htmlitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="css")
+      //   $("#cssitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="javascript")
+      //   $("#javascriptitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="jquery")
+      //   $("#jqueryitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="mysql")
+      //   $("#mysqlitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="php")
+      //   $("#phpitems").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="java1")
+      //   $("#java1items").collapse('toggle');
+      //
+      //   else if($(this).attr("id")=="java2")
+      //   $("#java2items").collapse('toggle');
+      //
+      //   if($(this).html()=='More')
+      //   $(this).html('Less');
+      //   else
+      //   $(this).html('More');
+      // });
 
       $(".switchit").click(function(){
         var getId=$(this).attr("id");
@@ -455,8 +556,17 @@
             $("#java2more").css("display", "inline");
             $("#java2").html("Less");
           }
-        } 
+        }
+
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+
+        
       }
+      // $(".c1").on('shown.bs.collapse', function(){
+      // });
     });
     </script>
   </body>
