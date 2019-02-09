@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Akshaya Amar Portfolio</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto:300,400i,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/animated-headline.css"></link>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <style type="text/css">
-    
-    body{
-      font-family: 'Questrial', sans-serif;
-    }
+
+  body{
+    font-family: 'Questrial', sans-serif;
+  }
 
   .bg-header{
     background: url("images/background1.jpg") no-repeat fixed center;
@@ -69,7 +70,7 @@
     position: absolute;
     bottom: -200px;
     font-size: 25px;
-    color: orange;
+    color: white;
     width: 50px;
     height: 50px;
     border: 1px solid white;
@@ -84,7 +85,7 @@
   }
 
   .self {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.2;
     color: white;
   }
@@ -109,6 +110,10 @@
     font-weight: 400;
     font-style: italic;
   }
+
+   /* #h123 + #headingGone{
+    color: blue;
+  } */
 
    #headingGone + #h123{
     color: blue;
@@ -146,29 +151,39 @@
     text-decoration: none;
   }
 
+  .horirule{
+    border: 1px solid #FF8C00;
+  }
+
   </style>
 </head>
 <body id="myportfolio" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <!-- Header for Navbar and Banner Text -->
   <header class="container-fluid bg-header" id="home">
 
+    <!-- To add Background Color -->
     <div class="header-bg-gray">
 
+      <!-- Navigation bar begins -->
       <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top" id="my-navbar">
 
+        <!-- Navbar brand logo -->
         <a href="#home" class="navbar-brand">
           <img src="images/next.png" alt="">
         </a>
 
+        <!-- Toggler button to replace the navbar when navbar is collapsed -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbar-content" aria-controls="navbar-content"
           area-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#one" class="nav-link">One</a>
+            <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="#two" class="nav-link">Two</a>
@@ -186,10 +201,12 @@
         </div>
       </nav>
 
+      <!-- Container for banner text -->
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
+            <!-- banner text -->
             <div class="banner-text">
 
               <div class="headline-area">
@@ -209,6 +226,7 @@
 
             </div>
 
+            <!-- scroll to about button -->
             <div class="scroll-to-about text-center">
               <a href="#about"><i class="fa fa-angle-down"></i></a>
             </div>
@@ -219,11 +237,118 @@
   </header>
 
   <div class="container" id="sample">
+    <!-- <div class="card rounded shadow mb-4" style="width: 18rem;"> -->
     <div class="card rounded shadow mb-4">
       <div class="card-body">
         <h5 class="m-0 card-title">Portfolio</h5>
-        <hr>
+        <hr class="horirule">
         <p class="card-text">Presenting myself in a Unique Way!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card rounded shadow mb-4">
+      <div class="card-body">
+        <h5 class="m-0 card-title">Skills</h5>
+        <hr class="horirule">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Front-End Development using</th>
+              <th>Front-End Development using Frameworks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                </ul>
+              </td>
+
+              <td>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>Angular</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Back-End Development using</th>
+              <th>Back-End Development using Frameworks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>PHP</li>
+                  <li>Java</li>
+                  <li>MongoDB</li>
+                  <li>MySQL</li>
+                  <li>SQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </td>
+
+              <td>
+                <ul>
+                  <li>Spring</li>
+                  <li>Hibernate</li>
+                  <li>JPA</li>
+                  <li>Android</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Other Technologies</th>
+              <th>IDEs'/Tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>AJAX</li>
+                  <li>JSON</li>
+                  <li>XML</li>
+                  <li>Photoshop</li>
+                  <li>C</li>
+                  <li>Linux</li>
+                </ul>
+              </td>
+
+              <td>
+                <ul>
+                  <li>Sublime Text</li>
+                  <li>Atom</li>
+                  <li>Android Studio</li>
+                  <li>Intellij Idea</li>
+                  <li>Eclipse</li>
+                  <li>Emmet</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
       </div>
     </div>
   </div>
@@ -240,7 +365,8 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">HTML</h5>
-            <hr>
+            <hr class="horirule">
+            <!-- <p class="card-text">About HTML</p> -->
             <ul>
               <li>Images</li>
               <li>Forms</li>
@@ -273,7 +399,8 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">CSS</h5>
-            <hr>
+            <hr class="horirule">
+            <!-- <p class="card-text">About CSS</p> -->
             <ul>
               <li>Classes</li>
               <li>ID's</li>
@@ -306,7 +433,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Javascript</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About JAVASCRIPT</p> -->
             <ul>
               <li>DOM Elements, HTML, CSS</li>
@@ -340,7 +467,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">jQuery</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About jQuery</p> -->
             <ul>
               <li>Selectors</li>
@@ -374,7 +501,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">MySQL</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About MYSQL</p> -->
             <ul>
               <li>Primary Key</li>
@@ -408,7 +535,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">PHP</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About PHP</p> -->
             <ul>
               <li>Sessions</li>
@@ -442,7 +569,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Java L1</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About JAVA LEVEL1</p> -->
             <ul>
               <li>Classes/Objects</li>
@@ -476,7 +603,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Java L2</h5>
-            <hr>
+            <hr class="horirule">
             <!-- <p class="card-text">About JAVA LEVEL2</p> -->
             <ul>
               <li>Networking</li>
@@ -506,6 +633,7 @@
 
   <script src="jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/animated-headline.js"></script>
+  <!-- <script src="bootstrap/dist/js/bootstrap.min.js"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
 
@@ -515,13 +643,13 @@
 
     $( ".card" ).hover(
       function() {
-        $(this).animate({marginTop: "-3px"}, 200);
+        // $(this).animate({marginTop: "-3px"}, 200);
         $(this).addClass('shadow-lg').css('cursor', 'pointer');
       }, function() {
-        $(this).animate({marginTop: "3px"}, 200);
+        // $(this).animate({marginTop: "3px"}, 200);
         $(this).removeClass('shadow-lg');
       });
-    
+
       $(".switchit").click(function(){
         var getId=$(this).attr("id");
         // console.log(getId);
@@ -617,10 +745,7 @@
           'resizeDuration': 200,
           'wrapAround': true
         })
-
-       
       }
-      
     });
     </script>
   </body>
