@@ -16,6 +16,15 @@
   body{
     font-family: 'Questrial', sans-serif;
   }
+    
+    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
   .bg-header{
     background: url("images/background1.jpg") no-repeat fixed center;
@@ -158,6 +167,7 @@
   </style>
 </head>
 <body id="myportfolio" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <div class="unselectable">
   <!-- Header for Navbar and Banner Text -->
   <header class="container-fluid bg-header" id="home">
 
@@ -630,7 +640,8 @@
       </div>
 
     </div>
-  </div>
+  </div>      
+</div>
 
   <script src="jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/animated-headline.js"></script>
