@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Akshaya Amar Portfolio</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto:300,400i,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/animated-headline.css"></link>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -16,26 +15,17 @@
   body{
     font-family: 'Questrial', sans-serif;
   }
-    
-    .unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
   .bg-header{
     background: url("images/background1.jpg") no-repeat fixed center;
     background-size: cover;
-    min-height: 890px;
+    min-height: 900px;
     position: relative;
   }
 
   .header-bg-gray{
     background-color: rgba(0, 0, 0, .55);
-    min-height: 890px;
+    min-height: 900px;
   }
 
   .container-fluid{
@@ -120,11 +110,7 @@
     font-style: italic;
   }
 
-   /* #h123 + #headingGone{
-    color: blue;
-  } */
-
-   #headingGone + #h123{
+  #headingGone + #h123{
     color: blue;
   }
 
@@ -164,59 +150,92 @@
     border: 1px solid #FF8C00;
   }
 
+  .box{
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+
+  .box span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+
+  .box span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+
+  @keyframes animate{
+    0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
   </style>
 </head>
 <body id="myportfolio" data-spy="scroll" data-target=".navbar" data-offset="100">
   <div class="unselectable">
-  <!-- Header for Navbar and Banner Text -->
-  <header class="container-fluid bg-header" id="home">
 
-    <!-- To add Background Color -->
-    <div class="header-bg-gray">
+    <header class="container-fluid bg-header" id="home">
 
-      <!-- Navigation bar begins -->
-      <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top" id="my-navbar">
+      <div class="header-bg-gray">
 
-        <!-- Navbar brand logo -->
-        <a href="#home" class="navbar-brand">
-          <img src="images/next.png" alt="">
-        </a>
+        <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top" id="my-navbar">
 
-        <!-- Toggler button to replace the navbar when navbar is collapsed -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          <a href="#home" class="navbar-brand">
+            <img src="images/next.png" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbar-content" aria-controls="navbar-content"
           area-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbar-content">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#two" class="nav-link">Two</a>
-          </li>
-          <li class="nav-item">
-            <a href="#three" class="nav-link">Three</a>
-          </li>
-          <li class="nav-item">
-            <a href="#four" class="nav-link">Four</a>
-          </li>
-          <li class="nav-item">
-            <a href="#five" class="nav-link">Five</a>
-          </li>
-        </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#two" class="nav-link">Two</a>
+            </li>
+            <li class="nav-item">
+              <a href="#three" class="nav-link">Three</a>
+            </li>
+            <li class="nav-item">
+              <a href="#four" class="nav-link">Four</a>
+            </li>
+            <li class="nav-item">
+              <a href="#five" class="nav-link">Five</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
-      <!-- Container for banner text -->
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
-            <!-- banner text -->
             <div class="banner-text">
 
               <div class="headline-area">
@@ -225,7 +244,7 @@
                   <div class="animate-headline">
                     <h1 class="cd-headline clip is-full-width"><span class="self">A <span>
                       <span class="cd-words-wrapper">
-                        <b class="is-visible">Web Developer</b>
+                        <b class="is-visible">Web App Developer</b>
                         <b>Programmer</b>
                         <b>Mobile App Developer</b>
                       </span>
@@ -236,100 +255,106 @@
 
             </div>
 
-            <!-- scroll to about button -->
-            <div class="scroll-to-about text-center">
-              <a href="#about"><i class="fa fa-angle-down"></i></a>
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <div class="container" id="sample">
-    <!-- <div class="card rounded shadow mb-4" style="width: 18rem;"> -->
-    <div class="card rounded shadow mb-4">
-      <div class="card-body">
-        <h5 class="m-0 card-title">Portfolio</h5>
-        <hr class="horirule">
-        <p class="card-text">Presenting myself in a Unique Way!</p>
-      </div>
+<div class="container" id="sample">
+  <div class="card rounded shadow mb-4">
+    <div class="card-body">
+      <h5 class="m-0 card-title">Portfolio</h5>
+      <hr class="horirule">
+      <p class="card-text">Presenting myself in a Unique Way!</p>
     </div>
   </div>
+</div>
 
-  <div class="container">
-    <div class="card rounded shadow mb-4">
-      <div class="card-body">
-        <h5 class="m-0 card-title">Skills</h5>
-        <hr class="horirule">
-              <table class="table table-borderless">
-          <thead>
-            <tr>
-              <th>Front-End Development using Core Technologies</th>
-              <th>Front-End Development using Frameworks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Javascript</li>
-                  <li>jQuery</li>
-                </ul>
-              </td>
+<div class="container">
+  <div class="card rounded shadow mb-4">
+    <div class="card-body">
+      <h5 class="m-0 card-title">Skills</h5>
+      <hr class="horirule">
 
-              <td>
-                <ul>
-                  <li>Bootstrap</li>
-                  <li>Angular</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <h5>Front-End Development</h5>
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Core Technologies</th>
+            <th>Frameworks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+              </ul>
+            </td>
 
-        <hr>
+            <td>
+              <ul>
+                <li>Bootstrap</li>
+                <li>Angular</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <h5>Back-End Development</h5>
+
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Core Technologies</th>
+            <th>Frameworks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </td>
+
+            <td>
+              <ul>
+                <li>Spring</li>
+                <li>Hibernate</li>
+                <li>JPA</li>
+                <li>Android</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <h4>Other Development Stuffs</h2>
 
         <table class="table table-borderless">
           <thead>
             <tr>
-              <th>Back-End Development using Core Technologies</th>
-              <th>Back-End Development using Frameworks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <ul>
-                  <li>PHP</li>
-                  <li>Java</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>SQL</li>
-                  <li>MongoDB</li>
-                </ul>
-              </td>
-
-              <td>
-                <ul>
-                  <li>Spring</li>
-                  <li>Hibernate</li>
-                  <li>JPA</li>
-                  <li>Android</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <hr>
-
-        <table class="table table-borderless">
-          <thead>
-            <tr>
-              <th>Other Technologies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <th>Technologies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
               <th>IDEs'/Tools</th>
             </tr>
           </thead>
@@ -365,399 +390,394 @@
   </div>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="card rounded shadow mb-4">
+      <div class="card-body">
+        <h5 class="m-0 card-title">Achievements</h5>
+        <hr class="horirule">
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/html_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in HTML">
-            <img class="card-img-top" src="certificates/html_certificate.png" alt="Card image cap">
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">HTML</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About HTML</p> -->
-            <ul>
-              <li>Images</li>
-              <li>Forms</li>
-              <li>Tables</li>
-              <li>Links</li>
-              <li>Entities</li>
-              <span id="htmlmore">
-                <li>IFrames</li>
-                <li>Header Tags</li>
-                <li>Paragraph Tags</li>
-                <li>Formatting Text</li>
-                <li>Lists</li>
-                <li>Lists</li>
-                <li>Lists</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id='html'>More</a>
+        <div class="container">
+          <div class="row justify-content-center">
+
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/html_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in HTML">
+                    <img class="card-img-top" src="certificates/html_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">HTML</h5>
+                  <hr>
+                  <ul>
+                    <li>Images</li>
+                    <li>Forms</li>
+                    <li>Tables</li>
+                    <li>Links</li>
+                    <li>Entities</li>
+                    <span id="htmlmore">
+                      <li>IFrames</li>
+                      <li>Header Tags</li>
+                      <li>Paragraph Tags</li>
+                      <li>Formatting Text</li>
+                      <li>Lists</li>
+                      <li>Lists</li>
+                      <li>Lists</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id='html'>More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/css_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in CSS">
-            <img class="card-img-top" src="certificates/css_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">CSS</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About CSS</p> -->
-            <ul>
-              <li>Classes</li>
-              <li>ID's</li>
-              <li>Border</li>
-              <li>Positioning</li>
-              <li>Pseudo-elements</li>
-              <span id="cssmore">
-                <li>Pseudo-classes</li>
-                <li>Styling Text</li>
-                <li>Fonts</li>
-                <li>Colors</li>
-                <li>Backgrounds</li>
-                <li>Margins</li>
-                <li>Paddings</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="css">More</a>
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/css_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in CSS">
+                    <img class="card-img-top" src="certificates/css_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">CSS</h5>
+                  <hr>
+                  <ul>
+                    <li>Classes</li>
+                    <li>ID's</li>
+                    <li>Border</li>
+                    <li>Positioning</li>
+                    <li>Pseudo-elements</li>
+                    <span id="cssmore">
+                      <li>Pseudo-classes</li>
+                      <li>Styling Text</li>
+                      <li>Fonts</li>
+                      <li>Colors</li>
+                      <li>Backgrounds</li>
+                      <li>Margins</li>
+                      <li>Paddings</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="css">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/js_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Javascript">
-              <img class="card-img-top" src="certificates/js_certificate.png" alt="Card image cap">
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Javascript</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About JAVASCRIPT</p> -->
-            <ul>
-              <li>DOM Elements, HTML, CSS</li>
-              <li>Functions</li>
-              <li>Arrays</li>
-              <li>Strings</li>
-              <li>Regular Expressions</li>
-              <span id="jsmore">
-                <li>Conditions</li>
-                <li>Loops</li>
-                <li>Data Types</li>
-                <li>Statements</li>
-                <li>Operators</li>
-                <li>Math</li>
-                <li>Random</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="javascript">More</a>
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/js_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Javascript">
+                    <img class="card-img-top" src="certificates/js_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Javascript</h5>
+                  <hr>
+                  <ul>
+                    <li>DOM Elements</li>
+                    <li>Functions</li>
+                    <li>Arrays</li>
+                    <li>Strings</li>
+                    <li>Regular Expressions</li>
+                    <span id="jsmore">
+                      <li>Conditions</li>
+                      <li>Loops</li>
+                      <li>Data Types</li>
+                      <li>Statements</li>
+                      <li>Operators</li>
+                      <li>Math</li>
+                      <li>Random</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="javascript">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/jquery_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in jQuery">
-            <img class="card-img-top" src="certificates/jquery_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">jQuery</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About jQuery</p> -->
-            <ul>
-              <li>Selectors</li>
-              <li>Events</li>
-              <li>Fade</li>
-              <li>Animate</li>
-              <li>jQuery UI</li>
-              <span id="jquerymore">
-                <li>Accordian</li>
-                <li>Draggable</li>
-                <li>Resizable</li>
-                <li>Droppable</li>
-                <li>Callback</li>
-                <li>Getter/Setter</li>
-                <li>CSS Classes</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="jquery">More</a>
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/jquery_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in jQuery">
+                    <img class="card-img-top" src="certificates/jquery_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">jQuery</h5>
+                  <hr>
+                  <ul>
+                    <li>Selectors</li>
+                    <li>Events</li>
+                    <li>Fade</li>
+                    <li>Animate</li>
+                    <li>jQuery UI</li>
+                    <span id="jquerymore">
+                      <li>Accordian</li>
+                      <li>Draggable</li>
+                      <li>Resizable</li>
+                      <li>Droppable</li>
+                      <li>Callback</li>
+                      <li>Getter/Setter</li>
+                      <li>CSS Classes</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="jquery">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/mysql_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in MySQL">
-            <img class="card-img-top" src="certificates/mysql_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">MySQL</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About MYSQL</p> -->
-            <ul>
-              <li>Primary Key</li>
-              <li>Foriegn Key</li>
-              <li>Join</li>
-              <li>WildCards</li>
-              <li>Functions</li>
-              <span id="mysqlmore">
-                <li>Create</li>
-                <li>Delete</li>
-                <li>Update</li>
-                <li>Retrieve</li>
-                <li>Order By</li>
-                <li>Aliases</li>
-                <li>Group By</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="mysql">More</a>
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/mysql_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in MySQL">
+                    <img class="card-img-top" src="certificates/mysql_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">MySQL</h5>
+                  <hr>
+                  <ul>
+                    <li>Primary Key</li>
+                    <li>Foriegn Key</li>
+                    <li>Join</li>
+                    <li>WildCards</li>
+                    <li>Functions</li>
+                    <span id="mysqlmore">
+                      <li>Create</li>
+                      <li>Delete</li>
+                      <li>Update</li>
+                      <li>Retrieve</li>
+                      <li>Order By</li>
+                      <li>Aliases</li>
+                      <li>Group By</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="mysql">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/php_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in PHP">
-            <img class="card-img-top" src="certificates/php_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">PHP</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About PHP</p> -->
-            <ul>
-              <li>Sessions</li>
-              <li>Cookies</li>
-              <li>Functions</li>
-              <li>Strings</li>
-              <li>MySql Database</li>
-              <span id="phpmore">
-                <li>Conditional Statements</li>
-                <li>Arrays</li>
-                <li>Loops</li>
-                <li>Include</li>
-                <li>Variables</li>
-                <li>Constants</li>
-                <li>Data Types</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="php">More</a>
+            <div class="col-md-4">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/php_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in PHP">
+                    <img class="card-img-top" src="certificates/php_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">PHP</h5>
+                  <hr>
+                  <ul>
+                    <li>Sessions</li>
+                    <li>Cookies</li>
+                    <li>Functions</li>
+                    <li>Strings</li>
+                    <li>MySql Database</li>
+                    <span id="phpmore">
+                      <li>Conditional Statements</li>
+                      <li>Arrays</li>
+                      <li>Loops</li>
+                      <li>Include</li>
+                      <li>Variables</li>
+                      <li>Constants</li>
+                      <li>Data Types</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="php">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/javal1_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
-            <img class="card-img-top" src="certificates/javal1_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Java L1</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About JAVA LEVEL1</p> -->
-            <ul>
-              <li>Classes/Objects</li>
-              <li>Constructors</li>
-              <li>Encapsulation</li>
-              <li>Polymorphism</li>
-              <li>Inheritance</li>
-              <span id="java1more">
-                <li>Packages</li>
-                <li>DataTypes</li>
-                <li>Loops</li>
-                <li>Strings</li>
-                <li>Arrays</li>
-                <li>Interfaces</li>
-                <li>Modifiers</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="java1">More</a>
+            <div class="col-md-6">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/javal1_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
+                    <img class="card-img-top" src="certificates/javal1_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Java L1</h5>
+                  <ul>
+                    <hr>
+                    <li>Classes/Objects</li>
+                    <li>Constructors</li>
+                    <li>Encapsulation</li>
+                    <li>Polymorphism</li>
+                    <li>Inheritance</li>
+                    <span id="java1more">
+                      <li>Packages</li>
+                      <li>DataTypes</li>
+                      <li>Loops</li>
+                      <li>Strings</li>
+                      <li>Arrays</li>
+                      <li>Interfaces</li>
+                      <li>Modifiers</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="java1">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card rounded shadow mb-4">
-          <div class="inner">
-            <a href="certificates/javal2_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
-            <img class="card-img-top" src="certificates/javal2_certificate.png" alt="Card image cap">
-          </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Java L2</h5>
-            <hr class="horirule">
-            <!-- <p class="card-text">About JAVA LEVEL2</p> -->
-            <ul>
-              <li>Networking</li>
-              <li>Timers</li>
-              <li>Exception Handling</li>
-              <li>ListViews</li>
-              <li>Processing JSON Data</li>
-              <span id="java2more">
-                <li>Inner Classes</li>
-                <li>Generics</li>
-                <li>Wrapper Classes</li>
-                <li>Collection</li>
-                <li>JDBC</li>
-                <li>Servlet</li>
-                <li>JSP</li>
-              </span>
-            </ul>
-            <div class="sample">
-              <a href="#collapseIt" class="switchit" id="java2">More</a>
+            <div class="col-md-6">
+              <div class="card rounded shadow mb-4">
+                <div class="inner">
+                  <a href="certificates/javal2_certificate.png" data-lightbox="mygallery" data-title="CCA Certification in Java">
+                    <img class="card-img-top" src="certificates/javal2_certificate.png" alt="Card image cap">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Java L2</h5>
+                  <hr>
+                  <ul>
+                    <li>Networking</li>
+                    <li>Timers</li>
+                    <li>Exception Handling</li>
+                    <li>ListViews</li>
+                    <li>Processing JSON Data</li>
+                    <span id="java2more">
+                      <li>Inner Classes</li>
+                      <li>Generics</li>
+                      <li>Wrapper Classes</li>
+                      <li>Collection</li>
+                      <li>JDBC</li>
+                      <li>Servlet</li>
+                      <li>JSP</li>
+                    </span>
+                  </ul>
+                  <div class="sample">
+                    <a href="#collapseIt" class="switchit" id="java2">More</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
     </div>
-  </div>      
+  </div>
 </div>
 
-  <script src="jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/animated-headline.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <script src="js/lightbox-plus-jquery.min.js"></script>
+<br>
 
-  <script type="text/javascript">
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/animated-headline.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
 
-  $(document).ready(function(){
+<script type="text/javascript">
 
-    $( ".card" ).hover(
-      function() {
-        // $(this).animate({marginTop: "-3px"}, 200);
-        $(this).addClass('shadow-lg').css('cursor', 'pointer');
-      }, function() {
-        // $(this).animate({marginTop: "3px"}, 200);
-        $(this).removeClass('shadow-lg');
-      });
+$(document).ready(function(){
 
-      $(".switchit").click(function(){
-        var getId=$(this).attr("id");
-        // console.log(getId);
-        myFunction(getId);
-      })
-
-      function myFunction(gotId) {
-        console.log(gotId);
-        if(gotId=="html"){
-          if ($("#htmlmore").css("display")=="inline") {
-            $("#htmlmore").css("display", "none");
-            $("#html").html("More");
-          }
-          else {
-            $("#htmlmore").css("display", "inline");
-            $("#html").html("Less");
-          }
-        }
-        else if(gotId=="css"){
-          console.log("into css");
-          if ($("#cssmore").css("display")=="inline") {
-            $("#cssmore").css("display", "none");
-            $("#css").html("More");
-          }
-          else {
-            $("#cssmore").css("display", "inline");
-            $("#css").html("Less");
-          }
-        }
-        else if(gotId=="javascript"){
-          console.log("into js");
-          if ($("#jsmore").css("display")=="inline") {
-            $("#jsmore").css("display", "none");
-            $("#javascript").html("More");
-          }
-          else {
-            $("#jsmore").css("display", "inline");
-            $("#javascript").html("Less");
-          }
-        }
-        else if(gotId=="jquery"){
-          if ($("#jquerymore").css("display")=="inline") {
-            $("#jquerymore").css("display", "none");
-            $("#jquery").html("More");
-          }
-          else {
-            $("#jquerymore").css("display", "inline");
-            $("#jquery").html("Less");
-          }
-        }
-        else if(gotId=="mysql"){
-          if ($("#mysqlmore").css("display")=="inline") {
-            $("#mysqlmore").css("display", "none");
-            $("#mysql").html("More");
-          }
-          else {
-            $("#mysqlmore").css("display", "inline");
-            $("#mysql").html("Less");
-          }
-        }
-        else if(gotId=="php"){
-          if ($("#phpmore").css("display")=="inline") {
-            $("#phpmore").css("display", "none");
-            $("#php").html("More");
-          }
-          else {
-            $("#phpmore").css("display", "inline");
-            $("#php").html("Less");
-          }
-        }
-        else if(gotId=="java1"){
-          if ($("#java1more").css("display")=="inline") {
-            $("#java1more").css("display", "none");
-            $("#java1").html("More");
-          }
-          else {
-            $("#java1more").css("display", "inline");
-            $("#java1").html("Less");
-          }
-        }
-        else if(gotId=="java2"){
-          if ($("#java2more").css("display")=="inline") {
-            $("#java2more").css("display", "none");
-            $("#java2").html("More");
-          }
-          else {
-            $("#java2more").css("display", "inline");
-            $("#java2").html("Less");
-          }
-        }
-
-        lightbox.option({
-          'resizeDuration': 200,
-          'wrapAround': true
-        })
-      }
+  $( ".card" ).hover(
+    function() {
+      $(this).addClass('shadow-lg').css('cursor', 'pointer');
+    }, function() {
+      $(this).removeClass('shadow-lg');
     });
-    </script>
-  </body>
-  </html>
+
+    $(".switchit").click(function(){
+      var getId=$(this).attr("id");
+      myFunction(getId);
+    })
+
+    function myFunction(gotId) {
+      console.log(gotId);
+      if(gotId=="html"){
+        if ($("#htmlmore").css("display")=="inline") {
+          $("#htmlmore").css("display", "none");
+          $("#html").html("More");
+        }
+        else {
+          $("#htmlmore").css("display", "inline");
+          $("#html").html("Less");
+        }
+      }
+      else if(gotId=="css"){
+        console.log("into css");
+        if ($("#cssmore").css("display")=="inline") {
+          $("#cssmore").css("display", "none");
+          $("#css").html("More");
+        }
+        else {
+          $("#cssmore").css("display", "inline");
+          $("#css").html("Less");
+        }
+      }
+      else if(gotId=="javascript"){
+        console.log("into js");
+        if ($("#jsmore").css("display")=="inline") {
+          $("#jsmore").css("display", "none");
+          $("#javascript").html("More");
+        }
+        else {
+          $("#jsmore").css("display", "inline");
+          $("#javascript").html("Less");
+        }
+      }
+      else if(gotId=="jquery"){
+        if ($("#jquerymore").css("display")=="inline") {
+          $("#jquerymore").css("display", "none");
+          $("#jquery").html("More");
+        }
+        else {
+          $("#jquerymore").css("display", "inline");
+          $("#jquery").html("Less");
+        }
+      }
+      else if(gotId=="mysql"){
+        if ($("#mysqlmore").css("display")=="inline") {
+          $("#mysqlmore").css("display", "none");
+          $("#mysql").html("More");
+        }
+        else {
+          $("#mysqlmore").css("display", "inline");
+          $("#mysql").html("Less");
+        }
+      }
+      else if(gotId=="php"){
+        if ($("#phpmore").css("display")=="inline") {
+          $("#phpmore").css("display", "none");
+          $("#php").html("More");
+        }
+        else {
+          $("#phpmore").css("display", "inline");
+          $("#php").html("Less");
+        }
+      }
+      else if(gotId=="java1"){
+        if ($("#java1more").css("display")=="inline") {
+          $("#java1more").css("display", "none");
+          $("#java1").html("More");
+        }
+        else {
+          $("#java1more").css("display", "inline");
+          $("#java1").html("Less");
+        }
+      }
+      else if(gotId=="java2"){
+        if ($("#java2more").css("display")=="inline") {
+          $("#java2more").css("display", "none");
+          $("#java2").html("More");
+        }
+        else {
+          $("#java2more").css("display", "inline");
+          $("#java2").html("Less");
+        }
+      }
+    }
+  });
+  </script>
+</body>
+</html>
