@@ -1,11 +1,60 @@
-[
-{
-            "myurl": "https://alexhudda.github.io/e.jpg"
-        },	
- {
-            "myurl": "https://alexhudda.github.io/c.jpg"
-        }, {
-	"myurl": "https://cdn.pixabay.com/photo/2020/04/14/16/05/lake-5043286_960_720.jpg"
-	
-}
+[{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "AAP MLA Ch Fateh Singhji",
+		"place": "Gokulpuri - Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "AAP MLA Haji MdIshraqKhan",
+		"place": "Seelampur Area - Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "AAP MLA Sh Rajesh Guptaji",
+		"place": "Wazirpur Area - Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "BJRM Hospital",
+		"place": "Jahangirpuri - Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "CBSE Regional Office",
+		"place": "Mangolpuri Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "Delhi Home Guards",
+		"place": "Raja Garden Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "South City 2 - Red Cross",
+		"place": "Gurugram Haryana"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "MoH&FW GoI Meeting 9.9.16",
+		"place": "439-A Nirman Bhawan Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "MC Mrs Abha Chauhanji",
+		"place": "Uttam Nagar Delhi"
+
+	},
+	{
+		"myurl": "https://alexhudda.github.io/image_eight.jpg",
+		"event": "RAK Nursing College",
+		"place": "Moolchand Delhi"
+	}
 ]
