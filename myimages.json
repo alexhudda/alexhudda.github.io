@@ -2,5 +2,8 @@
 	"myurl": "https://cdn.pixabay.com/photo/2020/04/14/16/05/lake-5043286_960_720.jpg"
 	
 },
- {"myurl":"https://drive.google.com/file/d/1bWkGoTxPNDCMf-Y4pcGiTGw9rYKPZNdU/view?usp=sharing"}
+ {
+            "myurl": "https://drive.google.com/file/d/1bWkGoTxPNDCMf-Y4pcGiTGw9rYKPZNdU/view"
+
+        }
 ]
